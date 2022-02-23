@@ -10,6 +10,8 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        align-items: flex-end;
+        transition: 0.8s all;
 
         position: absolute;
         top: 20px;
@@ -17,24 +19,27 @@
 
         &-line {
             background-color: $text-color;
-            width: 100%;
+            width: 80%;
             height: 3px;
+            transition: 0.5s all;
+
+            &-longer {
+                width: 100%;
+                height: 3px;
+                background-color: $text-color;
+                transition: 0.5s all;
+            }
         }
 
-        &::before {
-            content: '';
-            display: block;
-            background-color: $text-color;
-            height: 3px;
-            width: 80%
-        }
+        &:hover {
+            cursor: pointer;
 
-        &::after {
-            content: '';
-            display: block;
-            background-color: $text-color;
-            height: 3px;
-            width: 80%
+            .intro__burger-line {
+                width: 100%;
+                &-longer {
+                    width: 80%;
+                }
+            }
         }
     }
 
@@ -84,6 +89,10 @@
             color: $text-color;
             text-decoration: none;
             margin-right: 15px;
+            transition: 0.3s all;
+            &:hover {
+                color: $base-color;
+            }
         }
     }
 }
