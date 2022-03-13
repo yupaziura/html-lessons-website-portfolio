@@ -1,0 +1,36 @@
+.about {
+    margin-top: 120px;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    &__text {
+        max-width: 570px;
+    }
+
+    &__subblock {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__items {
+        margin-top: 20px;
+        max-width: 250px;
+        display: flex;
+        align-items: top;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        margin-right: 20px;
+        position: relative;
+        &::before {
+            @include circle;
+        }
+    }
+}

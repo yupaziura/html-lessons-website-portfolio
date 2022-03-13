@@ -1,0 +1,9 @@
+.secondheader {
+    font-weight: 700;
+    font-size: 36px;
+    &::after {
+        @include line;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
