@@ -41,22 +41,10 @@
         }
     }
 
-    .subheader {
-        text-align: center;
-
-        &::before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-
     .secondheader {
         margin-top: 10px;
-        text-align: center;
 
-        &::after {
-            margin: 25px auto 0 auto;
-        }
+       
     }
 
     &__wrapper {
