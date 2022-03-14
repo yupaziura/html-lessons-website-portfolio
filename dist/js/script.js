@@ -14,3 +14,10 @@ $(document).ready(function () {
     })
 
 });
+
+const percent = document.querySelectorAll('.skills__bar-percent');
+const line = document.querySelectorAll('.skills__color');
+
+line.forEach((item, i) => {
+    item.style.width = percent[i].innerHTML;
+})
