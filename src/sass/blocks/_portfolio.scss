@@ -25,8 +25,24 @@
         }
     }
 
-    &__item :hover {
-        transition: all 0.5s;
-        filter: opacity(80%);
+    &__item {
+
+        &:hover {
+            transition: all 0.5s;
+            filter: opacity(80%);
+
+        }
+
+        &-grey {
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(100%);
+            }
+
+            a {
+                cursor: not-allowed;
+            }
+        }
     }
 }
