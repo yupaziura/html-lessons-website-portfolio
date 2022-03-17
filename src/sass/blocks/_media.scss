@@ -27,6 +27,12 @@
     .container {
         max-width: 720px;
     }
+
+    .experience {
+        &__column {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 768px) {
