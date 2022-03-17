@@ -28,6 +28,28 @@
         }
     }
 
+    .portfolio {
+
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill, 280px);
+            justify-content: center;
+            grid-auto-rows: 280px;
+        }
+
+        &__item {
+
+            &-vert {
+                grid-column: unset;
+                grid-row: unset;
+            }
+
+            &-horizon {
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -45,6 +67,7 @@
         &__wrapper {
             grid-template-columns: 1fr 1fr;
         }
+
         &__bar {
             width: 200px;
         }
@@ -76,13 +99,13 @@
         }
     }
 
-    .skills{
+    .skills {
         &__item {
             width: 250px;
         }
 
-        &__bars{
-            grid-template-columns: 1fr 1fr; 
+        &__bars {
+            grid-template-columns: 1fr 1fr;
         }
 
         &__bar {
@@ -112,8 +135,8 @@
             grid-template-columns: 1fr;
         }
 
-        &__bars{
-            grid-template-columns: 1fr; 
+        &__bars {
+            grid-template-columns: 1fr;
         }
 
         &__bar {
