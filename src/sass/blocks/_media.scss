@@ -2,6 +2,13 @@
     aside {
         display: none;
     }
+
+    .skills {
+        &__wrapper {
+            margin: 60px auto 0 auto;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }
 
 
@@ -33,6 +40,16 @@
             margin: 0 auto;
         }
     }
+
+    .skills {
+        &__wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__bar {
+            width: 200px;
+        }
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -58,6 +75,20 @@
             margin: 40px auto 0 auto;
         }
     }
+
+    .skills{
+        &__item {
+            width: 250px;
+        }
+
+        &__bars{
+            grid-template-columns: 1fr 1fr; 
+        }
+
+        &__bar {
+            width: 250px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -75,4 +106,20 @@
             }
         }
     }
+
+    .skills {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__bars{
+            grid-template-columns: 1fr; 
+        }
+
+        &__bar {
+            width: 300px;
+            margin: 40px auto 0 auto;
+        }
+    }
+
 }

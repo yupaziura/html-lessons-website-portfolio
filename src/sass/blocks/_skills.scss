@@ -2,9 +2,10 @@
     margin-top: 125px;
 
     &__wrapper {
-        margin-top: 60px;
+        margin: 60px 0 0 0;
         display: grid;
         justify-content: space-between;
+        justify-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 13px;
     }
@@ -43,7 +44,7 @@
     &__bar {
         width: 300px;
         height: 70px;
-        margin-top: 40px;
+        margin: 40px 0 0 0;
         position: relative;
 
         &-header {
