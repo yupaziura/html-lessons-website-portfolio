@@ -1,0 +1,57 @@
+@media (max-width: 1439px) {
+    aside{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media  (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .intro{
+        h1{
+            font-size: 35px;
+        }
+    }
+
+    .button{
+        min-width: 110px;
+        min-height: 30px;
+
+        font-size: 12px;
+    }
+}
+
+@media  (max-width: 576px) {
+    .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .menu{
+        &__block{
+            width: 255px;
+
+            &__list {
+                font-size: 20px;
+            }
+        }
+
+        
+    }
+}
+

@@ -2,7 +2,7 @@
     background-color: rgb(161, 244, 255);
     padding-top: 206px;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 
     &__burger {
         width: 35px;
@@ -53,7 +53,7 @@
 
     &__buttons {
         display: flex;
-        width: 315px;
+        max-width: 315px;
         flex-wrap: wrap;
         justify-content: space-between;
     }

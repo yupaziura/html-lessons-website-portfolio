@@ -21,6 +21,8 @@
 @import './blocks/contacts';
 @import './blocks/policy';
 
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -35,3 +37,5 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+@import './blocks/media';
