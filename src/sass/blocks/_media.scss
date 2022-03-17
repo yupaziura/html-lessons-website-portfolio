@@ -73,6 +73,12 @@
         }
     }
 
+    .prices {
+        &__column {
+            margin: 0 auto;
+        }
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -142,6 +148,12 @@
         &__bar {
             width: 300px;
             margin: 40px auto 0 auto;
+        }
+    }
+
+    .prices {
+        &__headers {
+            min-width: 270px;
         }
     }
 
