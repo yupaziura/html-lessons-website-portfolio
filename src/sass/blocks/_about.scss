@@ -28,6 +28,7 @@
     }
 
     &__icon {
+        min-width: 40px;
         margin-right: 20px;
         position: relative;
         &::before {
